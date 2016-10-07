@@ -1,12 +1,15 @@
 ﻿// Mouse Cursor
-////Mouse.DirectInputX = Mouse.DirectInputX + 13*deadzone(XInput1.Joy2X)  //right stick left & right
-////Mouse.DirectInputY = Mouse.DirectInputY - 13*deadzone(XInput1.Joy2Y) //right stick up & down
+//Mouse.DirectInputX = Mouse.DirectInputX + 13*deadzone(XInput1.Joy2X)  //right stick left & right
+//Mouse.DirectInputY = Mouse.DirectInputY - 13*deadzone(XInput1.Joy2Y) //right stick up & down
+
+
+
 
 // Mouse Buttons
 //Mouse.RightButton = XInput1.B
 ////Mouse.RightButton = XInput1.LeftShoulder
 //Mouse.LeftButton = XInput1.A
-////Mouse.LeftButton = XInput1.RightShoulder
+//Mouse.LeftButton = XInput1.RightShoulder
 
 
 //Mouse.WheelUp = Xinput1.Joy1Y > 0.2
@@ -28,7 +31,7 @@
 /////if XInput1.Joy1X>0 then wait((1-XInput1.Joy1X)/2s) else wait((1-(XInput1.Joy1X*-1))/2s)
 ///}
 
-Mouse.IsDragging = False
+//Mouse.IsDragging = False
 
 //Mouse.MiddleButton = XInput1.RightThumb
 
@@ -63,6 +66,9 @@ Mouse.IsDragging = False
 //Mouse.WheelUp = Xinput1.Down
 //Mouse.WheelDown = Xinput1.Up
 
+
+
+/******************************************
 Key.Space = Xinput1.A
 
 Key.Up = XInput.Joy1Y >.33
@@ -85,23 +91,28 @@ Key.Escape = XInput2.Back
 Key.BackSpace = XInput1.Start
 Key.BackSpace = XInput2.Start
 
+*******************************************/
+
+//Key.LeftShift = Xinput2.A
 
 
-Key.LeftShift = Xinput2.A
-
-Key.W = XInput2.Joy1Y >.33
+Key.W = XInput1.Joy1Y >.33
 //Key.Shift and Key.W = XInput.Joy1Y >.66
-Key.A = XInput2.Joy1X >.33
+Key.D = XInput1.Joy1X >.33
 //Key.Shift and Key.D = XInput.Joy1X >.66
-Key.S = XInput2.Joy1Y <-.33
+Key.S = XInput1.Joy1Y <-.33
 //Key.Shift and Key.S = XInput.Joy1Y <-.66
-Key.D = XInput2.Joy1X <-.33
+Key.A = XInput1.Joy1X <-.33
 //Key.Shift and Key.A = XInput.Joy1X <-.66
   //taunts//
-Key.U = XInput2.Up
-Key.I = XInput2.Left
-Key.O = XInput2.Right
-Key.P = XInput2.Down
+
+
+/*********************************
+Key.U = XInput1.Up
+Key.I = XInput1.Left
+Key.O = XInput1.Right
+Key.P = XInput1.Down
+**********************************/
  //eind taunts//
 
 
