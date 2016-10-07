@@ -1,0 +1,9 @@
+﻿// Mouse Pointer Control
+Mouse.DirectInputX = Mouse.DirectInputX + 10*deadzone(XInput1.Joy2X)
+Mouse.DirectInputY = Mouse.DirectInputY + -10*deadzone(XInput1.Joy2Y)
+
+//Mouse Buttons – attack 1 and attack 2
+Mouse.LeftButton = XInput1.RightTrigger
+Mouse.RightButton = XInput1.LeftTrigger
+
+

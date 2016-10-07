@@ -1,0 +1,9 @@
+﻿var.TurnSpeed = 28 //Sensitivity used for right joystick
+var.InvSpeed = 36 //Sensitivity used for POVHat - supposed to make it move one square
+
+//Turning (Right Stick)
+Mouse.DirectInputX = Mouse.DirectInputX + 15*deadzone(XInput1.Joy2X)//Joystick1.Axis4)
+Mouse.DirectInputY = Mouse.DirectInputY - 15*deadzone(XInput1.Joy2Y)//Axis5)
+//Clicking
+Mouse.LeftButton = EnsureMapRange(XInput1.RightTrigger, 0,-1, 0,1) //RT
+Mouse.RightButton = XInput1.x //LT

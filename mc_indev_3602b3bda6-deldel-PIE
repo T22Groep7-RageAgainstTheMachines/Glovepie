@@ -1,0 +1,33 @@
+﻿// Mouse Cursor
+Mouse.DirectInputX = Mouse.DirectInputX + 13*deadzone(XInput1.Joy2X)  //right stick left & right
+Mouse.DirectInputY = Mouse.DirectInputY - 13*deadzone(XInput1.Joy2Y) //right stick up & down
+
+// Movement
+A = -2 < XInput1.Joy1X < -0.2
+D = 2 > XInput1.Joy1X > 0.2
+S = -2 < XInput1.Joy1Y < -0.8
+W = 2 > XInput1.Joy1Y > 0.8
+Space = XInput1.A
+
+// Throw Item
+Q = XInput1.Back
+
+// Mouse Buttons
+Mouse.RightButton = XInput1.B
+Mouse.LeftButton = XInput1.X
+Mouse.LeftButton = XInput1.RightThumb
+
+// Scroll
+Mouse.WheelDown = -13*deadzone(XInput1.Joy1X)  //left stick left & right
+Mouse.WheelUp = XInput1.LeftShoulder
+
+// Inventory
+Escape = XInput1.Y
+
+// Quick Items
+Key.One = XInput1.Left
+Key.Three = XInput1.Up
+Key.Five = XInput1.Right
+Key.Zero = XInput1.Down
+
+Mouse.IsDragging = True
